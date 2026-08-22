@@ -52,3 +52,5 @@ Thumbs.db
 !.env.example
 data/raw/*.npy
 data/processed/*.npy
+
+upload_samples/*.npy
