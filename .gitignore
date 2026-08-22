@@ -43,3 +43,10 @@ Thumbs.db
 # ==============================
 .vscode/
 .idea/
+
+# ==============================
+# Environment variables / secrets
+# ==============================
+.env
+.env.*
+!.env.example
