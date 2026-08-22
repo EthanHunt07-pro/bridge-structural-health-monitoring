@@ -138,7 +138,7 @@ if prediction_mode == "🧪 Demo Mode":
     sample_index = st.selectbox(
         "Choose a Test Sample",
         range(len(X_test)),
-        format_func=lambda x: f"Sample #{x}"
+        format_func=lambda x: f"Test Sample {x:03d}"
     )
 
     st.caption(
