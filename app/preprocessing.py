@@ -7,10 +7,12 @@ This module converts raw vibration signals into the same
 
 import numpy as np
 
-from config import (
-    EXPECTED_SENSORS,
-    EXPECTED_TIME_STEPS,
-)
+
+try:
+    from .config import EXPECTED_SENSORS, EXPECTED_TIME_STEPS
+except ImportError:
+    from config import EXPECTED_SENSORS, EXPECTED_TIME_STEPS
+
 
 
 def validate_input_shape(data):

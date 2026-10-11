@@ -10,8 +10,14 @@ import joblib
 import numpy as np
 from tensorflow.keras.models import load_model
 
-from config import MODEL_PATH, SCALER_PATH
-from preprocessing import extract_features
+
+try:
+    from .config import MODEL_PATH, SCALER_PATH
+    from .preprocessing import extract_features
+except ImportError:
+    from config import MODEL_PATH, SCALER_PATH
+    from preprocessing import extract_features
+
 
 
 # ---------------------------------

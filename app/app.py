@@ -120,7 +120,7 @@ if prediction_mode == "🧪 Demo Mode":
 
     st.subheader("🧪 Demo Prediction")
 
-    st.info("""
+    st.info(f"""
         ### 🧪 About Demo Mode
 
         This mode uses the **20% unseen test dataset** that was **never used during model training**.
@@ -129,7 +129,7 @@ if prediction_mode == "🧪 Demo Mode":
 
         **Dataset Information**
 
-        - Unseen Test Samples: **306**
+        - Unseen Test Samples: **{len(X_test)}**
         - Sensors per Sample: **27**
         - Time Steps per Sensor: **6000**
         - Damage Classes: **17**
