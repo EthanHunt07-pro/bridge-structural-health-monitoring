@@ -10,3 +10,4 @@ notebook
 streamlit==1.60.0
 altair==6.2.2
 joblib==1.5.3
+reportlab==5.0.0
